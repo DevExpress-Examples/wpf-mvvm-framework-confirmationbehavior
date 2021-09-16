@@ -1,8 +1,7 @@
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.DataAnnotations;
 
-namespace Example.ViewModel
-{
+namespace Example.ViewModel {
     public class MainViewModel : ViewModelBase {
         
         string savedText;
