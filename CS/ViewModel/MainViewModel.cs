@@ -1,27 +1,35 @@
-﻿using DevExpress.Mvvm;
+using DevExpress.Mvvm;
 using DevExpress.Mvvm.DataAnnotations;
-using DevExpress.Mvvm.POCO;
 
-namespace Example.ViewModel {
-    [POCOViewModel]
-    public class MainViewModel {
-        string SavedText;
-        public virtual string Text { get; set; }
-        public bool IsSaved {
-            get {
-                return Text == SavedText;
+namespace Example.ViewModel
+{
+    public class MainViewModel : ViewModelBase {
+        
+        string savedText;
+        
+        public string Text {
+            get => GetValue<string>();
+            set {
+                SetValue(value);
+                RaisePropertyChanged(nameof(IsSaved));
             }
         }
+        public bool IsSaved {
+            get {
+                return Text == savedText && !string.IsNullOrEmpty(Text);
+            }
+        }
+
+        [Command]
         public void Save() {
-            SavedText = Text;
-            this.RaisePropertyChanged(x => x.IsSaved);
+            savedText = Text;
+            RaisePropertyChanged(nameof(IsSaved));
         }
+        
+        [Command]
         public void Close() {
-            SavedText = "";
-            Text = "";
-        }
-        protected void OnTextChanged() {
-            this.RaisePropertyChanged(x => x.IsSaved);
+            savedText = string.Empty;
+            Text = string.Empty;
         }
     }
 }
