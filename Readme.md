@@ -32,8 +32,8 @@ Specify the behavior's [Command](https://docs.devexpress.com/WPF/DevExpress.Mvvm
 
 <!-- default file list --> 
 ## Files to Look At:
-- [MainView.xaml](./CS/View/View/MainView.xaml) (**VB**: [MainView.xaml](./VB/View/MainView.xaml))
-- [MainViewMode.cs](./CS/ViewModel/ViewModel/MainViewModel.cs) (**VB**: [MainViewMode.vb](./VB/ViewModel/MainViewModel.vb))
+- [MainView.xaml](./CS/View/MainView.xaml) (**VB**: [MainView.xaml](./VB/View/MainView.xaml))
+- [MainViewMode.cs](./CS/ViewModel/MainViewModel.cs) (**VB**: [MainViewMode.vb](./VB/ViewModel/MainViewModel.vb))
 <!-- default file list end -->
 
 ## Documentation
