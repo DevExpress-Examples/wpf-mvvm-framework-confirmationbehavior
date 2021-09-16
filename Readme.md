@@ -6,7 +6,7 @@
 <!-- default file list -->
 # WPF MVVM Framework - Show a Confirmation Message Box Before Executing the Specified Command (a ConfirmationBehavior)
 
-The example attaches a command to a [Button](xref:System.Windows.Controls.Button) and enables a confirmation message for this **Close** command.
+The example attaches a command to a [Button](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.button) and enables a confirmation message for the command.
 
 ## Overview
 
