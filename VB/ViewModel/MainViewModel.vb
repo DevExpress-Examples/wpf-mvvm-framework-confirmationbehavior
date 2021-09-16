@@ -1,27 +1,37 @@
 ﻿Imports DevExpress.Mvvm
 Imports DevExpress.Mvvm.DataAnnotations
-Imports DevExpress.Mvvm.POCO
 
 Namespace Example.ViewModel
-	<POCOViewModel>
 	Public Class MainViewModel
-		Private SavedText As String
-		Public Overridable Property Text() As String
+		Inherits ViewModelBase
+
+		Private savedText As String
+
+		Public Property Text() As String
+			Get
+				Return GetValue(Of String)()
+			End Get
+			Set(ByVal value As String)
+				SetValue(value)
+				RaisePropertyChanged(NameOf(IsSaved))
+			End Set
+		End Property
 		Public ReadOnly Property IsSaved() As Boolean
 			Get
-				Return Text = SavedText
+				Return Text = savedText AndAlso Not String.IsNullOrEmpty(Text)
 			End Get
 		End Property
+
+		<Command>
 		Public Sub Save()
-			SavedText = Text
-			Me.RaisePropertyChanged(Function(x) x.IsSaved)
+			savedText = Text
+			RaisePropertyChanged(NameOf(IsSaved))
 		End Sub
+
+		<Command>
 		Public Sub Close()
-			SavedText = ""
-			Text = ""
-		End Sub
-		Protected Sub OnTextChanged()
-			Me.RaisePropertyChanged(Function(x) x.IsSaved)
+			savedText = String.Empty
+			Text = String.Empty
 		End Sub
 	End Class
 End Namespace
