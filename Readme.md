@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 <!-- default file list -->
-# WPF MVVM Framework - Show a Confirmation Message Box Before to Execute the Specified Command (a ConfirmationBehavior)
+# WPF MVVM Framework - Show a Confirmation Message Box Before Executing the Specified Command (a ConfirmationBehavior)
 
 The example attaches a command to a [Button](xref:System.Windows.Controls.Button) and enables a confirmation message for this **Close** command.
 
