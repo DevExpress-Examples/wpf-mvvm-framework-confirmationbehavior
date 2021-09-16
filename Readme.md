@@ -6,11 +6,11 @@
 <!-- default file list -->
 # WPF MVVM Framework - Show a Confirmation Message Box Before Executing the Specified Command (a ConfirmationBehavior)
 
-The example attaches a command to a [Button](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.button) and enables a confirmation message for the command.
+The example attaches a command to a [Button](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.button) and enables a confirmation message for the command. Users can confirm or cancel the operation.
 
 ## Overview
 
-Specify the behavior's [Command](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.ConfirmationBehavior.Command) property to set a command that displays a confirmation message and runs if the user accepts the message.
+Specify the behavior's [Command](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.ConfirmationBehavior.Command) property to set a command that shows a confirmation message and should be executed if the user confirms the operation.
 
 ## Customize a Confirmation Box
 
