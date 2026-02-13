@@ -42,7 +42,7 @@ Specify the behavior's [Command](https://docs.devexpress.com/WPF/DevExpress.Mvvm
 - [ConfirmationBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.ConfirmationBehavior)
 - [Behaviors](https://docs.devexpress.com/WPF/17442/mvvm-framework/behaviors)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-mvvm-framework-confirmationbehavior&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-mvvm-framework-confirmationbehavior&~~~was_helpful=no)
 
